@@ -7,10 +7,11 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@chakra-ui/storybook-addon"
+    "@chakra-ui/storybook-addon",
   ],
   "features": {
     "emotionAlias": false,
+    "interactionsDebugger": true
   },
   "framework": "@storybook/react",
   "core": {
