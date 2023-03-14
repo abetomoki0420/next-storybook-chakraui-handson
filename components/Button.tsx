@@ -1,5 +1,6 @@
 import React from "react"
+import { Button as ChakraButton } from "@chakra-ui/react"
 
-export const Button = ({ label }:{label: string}) => {
-  return <button>{label}</button>
+export const Button = ({ children }:{children: string}) => {
+  return <ChakraButton>{children}</ChakraButton>
 }
