@@ -1,6 +1,11 @@
 import React from "react"
-import { Checkbox as ChakraCheckbox} from "@chakra-ui/react"
+import { Checkbox as ChakraCheckbox, CheckboxProps } from "@chakra-ui/react"
 
-export const Checkbox = ({children}: {children: string}) => {
-  return <ChakraCheckbox>{ children }</ChakraCheckbox>
+type Props = {
+  children: string
+  onChange: CheckboxProps["onChange"]
+}
+
+export const Checkbox = ({ children, onChange }: Props) => {
+  return <ChakraCheckbox onChange={ onChange }>{ children }</ChakraCheckbox>
 }

@@ -10,5 +10,8 @@ export default {
 const Template = (args) => <Checkbox {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  children: "checkbox",
+  onChange: (v) => { alert("checked")}
+};
 
